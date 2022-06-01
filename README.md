@@ -4,7 +4,7 @@
 1) Copy files to php_interface/include/
 
 2) Set up the sitemap.php file   
--[ ] Set up all infoblocks so that they correctly form links to pages. 
+- [ ] Set up all infoblocks so that they correctly form links to pages. 
 -[ ] Enable All infoblocks that need to be output to a file
 `php
       $arBlocks[] = array(
