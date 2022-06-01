@@ -1,5 +1,5 @@
 # REDMAP
-**Sitemap.xml for CMS 1C Bitrix**
+**Sitemap.xml for CMS 1C Bitrix** by [Ivan Shabanov](https://github.com/IvanShabanov)
 
 1) Copy files to php_interface/include/
 
