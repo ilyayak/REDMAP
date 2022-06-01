@@ -5,7 +5,7 @@
 
 2) Set up the sitemap.php file   
 - [ ] Set up all infoblocks so that they correctly form links to pages. 
--[ ] Enable All infoblocks that need to be output to a file
+- [ ] Enable All infoblocks that need to be output to a file
 `php
       $arBlocks[] = array(
             'IBLOCK_ID' => 1, 
@@ -13,16 +13,16 @@
             'DETAIL' => 'Y'   
         );
  `           
--[ ] Add all menu files used on the site
+- [ ] Add all menu files used on the site
    
      `
      $sitemap->AddPagesFromMenuFile('.top.menu.php', $http.$host); 
      `   
--[ ]  Add Pages
+- [ ]  Add Pages
     ` 
     $sitemap->AddPage($http.$host.'/stock/');
     `
--[ ] Add ignored pages (pages that should not be included in the file)
+- [ ] Add ignored pages (pages that should not be included in the file)
       `
       $sitemap->AddIgnorePage($http.$host.'/hidden/');
       `
