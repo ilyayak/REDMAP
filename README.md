@@ -25,7 +25,7 @@
 - [ ] Add ignored pages (pages that should not be included in the file)
      ```php
       $sitemap->AddIgnorePage($http.$host.'/hidden/');
-      ```
+      
 3) in init.php add a line
       ```php
       include_once('sitemap.php');
