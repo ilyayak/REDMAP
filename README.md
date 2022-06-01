@@ -15,23 +15,19 @@
  `           
 -[ ] Add all menu files used on the site
    
-     `php
+     `
      $sitemap->AddPagesFromMenuFile('.top.menu.php', $http.$host); 
      `   
 -[ ]  Add Pages
-   
-    `php  
+    ` 
     $sitemap->AddPage($http.$host.'/stock/');
     `
-   
 -[ ] Add ignored pages (pages that should not be included in the file)
-   
-      `php
+      `
       $sitemap->AddIgnorePage($http.$host.'/hidden/');
       `
-
 3) in init.php add a line
-      `php
+      `
       include_once('sitemap.php');
       `
 4) Add agent
