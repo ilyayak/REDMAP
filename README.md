@@ -6,31 +6,31 @@
 2) Set up the sitemap.php file   
 - [ ] Set up all infoblocks so that they correctly form links to pages. 
 - [ ] Enable All infoblocks that need to be output to a file
-`php
+```php
       $arBlocks[] = array(
             'IBLOCK_ID' => 1, 
             'SECTION' => 'Y', 
             'DETAIL' => 'Y'   
         );
- `           
+ ```           
 - [ ] Add all menu files used on the site
    
-     `
+     ```php
      $sitemap->AddPagesFromMenuFile('.top.menu.php', $http.$host); 
-     `   
+     ```  
 - [ ]  Add Pages
-    ` 
+    ```php
     $sitemap->AddPage($http.$host.'/stock/');
-    `
+    ```
 - [ ] Add ignored pages (pages that should not be included in the file)
-      `
+     ```php
       $sitemap->AddIgnorePage($http.$host.'/hidden/');
-      `
+      ```
 3) in init.php add a line
-      `
+      ```php
       include_once('sitemap.php');
-      `
-4) Add agent
+      ```
+4) Add agent to 
       GenerateSitemapXmlExt();
 
 Download [release](https://github.com/ilyayak/REDMAP/releases/tag/1.0)
