@@ -33,5 +33,5 @@
 4) Add agent to 
       GenerateSitemapXmlExt();
 
-Download [release](https://github.com/ilyayak/REDMAP/releases/tag/1.0)
+[Download releases](https://github.com/ilyayak/REDMAP/releases/)
 
