@@ -1,38 +1,38 @@
-# Bitrix_sitemap
-Sitemap.xml для 1С Битрикс
+# REDMAP
+**Sitemap.xml for CMS 1C Bitrix**
 
-1) Скопировать файлы в php_interface
+1) Copy files to php_interface/include/
 
-2) Настроить файл sitemap.php
-   
-- Настройте все инфоблоки, чтобы в них правильно формировались ссылки на страницы.
-   
-- Включите Все инфоблоки которые надо вывести в файл
-
+2) Set up the sitemap.php file   
+-[ ] Set up all infoblocks so that they correctly form links to pages. 
+-[ ] Enable All infoblocks that need to be output to a file
+`php
       $arBlocks[] = array(
             'IBLOCK_ID' => 1, 
             'SECTION' => 'Y', 
             'DETAIL' => 'Y'   
         );
-        
-        
-- Добавьте все файлы меню используемые на сайте
+ `           
+-[ ] Add all menu files used on the site
    
-      $sitemap->AddPagesFromMenuFile('.top.menu.php', $http.$host); 
-    
-- Добавьте страницы
+     `php
+     $sitemap->AddPagesFromMenuFile('.top.menu.php', $http.$host); 
+     `   
+-[ ]  Add Pages
    
-      $sitemap->AddPage($http.$host.'/stock/');
+    `php  
+    $sitemap->AddPage($http.$host.'/stock/');
+    `
    
-- Добавьте игнорируемые страницы (страницы которые не должны попасть в файл)
+-[ ] Add ignored pages (pages that should not be included in the file)
    
+      `php
       $sitemap->AddIgnorePage($http.$host.'/hidden/');
+      `
 
-3) в init.php добавить строчку 
-      
+3) in init.php add a line
+      `php
       include_once('sitemap.php');
-
-
-4) Добавить агента 
-
+      `
+4) Add agent
       GenerateSitemapXmlExt();
